@@ -26,7 +26,7 @@ const UserSchema = new mongoose.Schema({
 const UserModel = mongoose.model("Drinks", UserSchema)
 
 function seedTheCollection() {
-    
+
     let maram = new UserModel({
         email: 'maramabumurad97@gmail.com',
         drinks: [
@@ -137,6 +137,8 @@ app.put
 
 
 
-
+app.get('/', (req,res)=>{
+    res.send('All Good')
+})
 
 app.listen(`${process.env.PORT}`, () => console.log(`listening on ${process.env.PORT}`));
