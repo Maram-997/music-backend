@@ -26,6 +26,7 @@ const UserSchema = new mongoose.Schema({
 const UserModel = mongoose.model("Drinks", UserSchema)
 
 function seedTheCollection() {
+    
     let maram = new UserModel({
         email: 'maramabumurad97@gmail.com',
         drinks: [
