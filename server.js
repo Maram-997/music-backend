@@ -7,7 +7,7 @@ const axios = require('axios')
 
 const app = express();
 app.use(cors());
-dotenv.config();
+require('dotenv').config();
 app.use(express.json());
 const Drinks = require('./drinks.json')
 const PORT = process.env.PORT ;
